@@ -7,7 +7,7 @@ echo "Error : Must run as root" 1>&2
 fi
 #tool install
 
-yum install boost boost-devel intltool gi
+yum install boost boost-devel intltool git
  
 mkdir -p /tmp/aegisub_workdir
 cd /tmp/aegisub_workdir

@@ -1,0 +1,52 @@
+#!/bin/bash
+ 
+# Add sudo
+if [ $EUID -ne 0 ]; then
+echo "Error : Must run as root" 1>&2
+  exit 1
+fi
+#tool install
+
+yum install boost boost-devel intltool gi
+ 
+mkdir -p /tmp/aegisub_workdir
+cd /tmp/aegisub_workdir
+ 
+# Librerías y dependencias para compilación de ffms2 y aegisub
+yum -y install libtool libtool-ltdl-devel
+yum -y install gcc-c++ gcc-objc gcc-objc++ libgcc gcc gcc-compact glib2
+yum -y install cmake
+yum -y install zlib-devel zlib
+ 
+ 
+# Dependencias de FFMS2
+yum -y install yelp-devel yasm-devel
+yum -y install ffmpeg-libs ffmpeg-compat-devel ffmpeg-devel
+ 
+ 
+# Dependencias de Aegisub
+yum -y install fontconfig-devel freetype-devel
+yum -y install mesa-libGL-devel libX11-devel
+yum -y install libass-devel lua-devel
+yum -y install fftw-devel hunspell-devel hunspell-fr
+yum -y install alsa-lib-devel
+ 
+# Install wxGTK
+yum install wxGTK3-devel wxGTK
+ 
+# install FFMS2 v.2.17
+git clone https://github.com/FFMS/ffms2.git
+cd ffms2
+./autogen.sh
+./configure --enable-shared --prefix=/usr
+make
+make install
+
+ 
+# install aegisub
+wget http://ftp.aegisub.org/pub/releases/aegisub-3.1.3.tar.xz
+tar -xJf aegisub-3.1.3.tar.xz
+cd aegisub-3.1.3.tar.xz
+./configure
+make
+make install

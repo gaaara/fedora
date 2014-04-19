@@ -12,19 +12,19 @@ yum install boost boost-devel intltool gi
 mkdir -p /tmp/aegisub_workdir
 cd /tmp/aegisub_workdir
  
-# Librerías y dependencias para compilación de ffms2 y aegisub
+# library et les dépendances pour la compilation et Aegisub ffms2
 yum -y install libtool libtool-ltdl-devel
 yum -y install gcc-c++ gcc-objc gcc-objc++ libgcc gcc gcc-compact glib2
 yum -y install cmake
 yum -y install zlib-devel zlib
  
  
-# Dependencias de FFMS2
+# dependance de FFMS2
 yum -y install yelp-devel yasm-devel
 yum -y install ffmpeg-libs ffmpeg-compat-devel ffmpeg-devel
  
  
-# Dependencias de Aegisub
+# dependance de Aegisub
 yum -y install fontconfig-devel freetype-devel
 yum -y install mesa-libGL-devel libX11-devel
 yum -y install libass-devel lua-devel

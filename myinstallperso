@@ -21,7 +21,7 @@ yum -y update
 
 sleep 1
 
-yum -y install vlc xbmc nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms wget
+yum -y install vlc xbmc google-chrome-stable nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms wget
 
 #skype
 #Dependence skype
@@ -107,10 +107,6 @@ wget http://ftp20.us.nero.com/PUB/ac7888a7d4a0111f26e005d64b577960/nerolinux-4.0
 chmod +x nerolinux-4.0.0.0b-x86_64.rpm
 rpm -ivh nerolinux-4.0.0.0b-x86_64.rpm
 
-#Install Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-chmod +x google-chrome-stable_current_x86_64.rpm
-rpm -ivh google-chrome-stable_current_x86_64.rpm
 
 
 

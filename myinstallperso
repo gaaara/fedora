@@ -10,7 +10,7 @@ yum -y update
 
 sleep 1
 
-yum -y install vlc xbmc nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms
+yum -y install vlc xbmc nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms wget
 
 #skype
 #Dependence skype

@@ -1,10 +1,21 @@
 #!/bin/bash
 
-#install de 
+#install des Repos
 
 su -lc 'yum -y install --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm'
 
 su -lc 'yum -y install --nogpgcheck http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm'
+
+#google repos
+cat <<'EOF' > /etc/yum.repos.d/google-chrome.repo
+[google-chrome]
+name=google-chrome - 64-bit
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+EOF
+
 
 yum -y update
 

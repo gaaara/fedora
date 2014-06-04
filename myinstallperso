@@ -6,11 +6,11 @@ su -lc 'yum -y install --nogpgcheck http://download1.rpmfusion.org/free/fedora/r
 
 su -lc 'yum -y install --nogpgcheck http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm'
 
-yum update
+yum -y update
 
 sleep 1
 
-yum install vlc xbmc nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms
+yum -y install vlc xbmc nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms
 
 #skype
 #Dependence skype

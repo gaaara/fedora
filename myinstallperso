@@ -106,7 +106,7 @@ make
 make install
 
 #download nero linux 4
-wget http://ftp20.us.nero.com/PUB/ac7888a7d4a0111f26e005d64b577960/nerolinux-4.0.0.0b-x86_64.rpm
+plowdown http://3jupne91j3.1fichier.com
 chmod +x nerolinux-4.0.0.0b-x86_64.rpm
 rpm -ivh nerolinux-4.0.0.0b-x86_64.rpm
 

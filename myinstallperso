@@ -106,7 +106,7 @@ make
 make install
 
 #download nero linux 4
-plowdown http://3jupne91j3.1fichier.com
+plowdown http://nfxz54if7z.1fichier.com
 chmod +x nerolinux-4.0.0.0b-x86_64.rpm
 rpm -ivh nerolinux-4.0.0.0b-x86_64.rpm
 

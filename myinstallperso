@@ -25,7 +25,7 @@ yum -y update
 
 sleep 1
 
-yum -y install plowshare flash-plugin mkvtoolnix-gui nspluginwrapper alsa-plugins-pulseaudio libcurl vlc xbmc google-chrome-stable nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms wget
+yum -y install wine plowshare flash-plugin mkvtoolnix-gui nspluginwrapper alsa-plugins-pulseaudio libcurl vlc xbmc google-chrome-stable nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms wget
 
 #skype
 #Dependence skype

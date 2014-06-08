@@ -110,6 +110,9 @@ wget http://ftp20.us.nero.com/PUB/ac7888a7d4a0111f26e005d64b577960/nerolinux-4.0
 chmod +x nerolinux-4.0.0.0b-x86_64.rpm
 rpm -ivh nerolinux-4.0.0.0b-x86_64.rpm
 
+#Vmware 10.0.2
+plowdown http://3jupne91j3.1fichier.com
+chmod +x VMware-Workstation-Full-10.0.2-1744117.x86_64.bundle
 
 
 

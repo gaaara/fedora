@@ -105,6 +105,9 @@ cd aegisub-3.1.3
 make
 make install
 
+mkdir /home/gaaara/setup
+cd /home/gaaara/setup
+
 #download nero linux 4
 plowdown http://nfxz54if7z.1fichier.com
 chmod +x nerolinux-4.0.0.0b-x86_64.rpm

@@ -154,7 +154,7 @@ Comment=/usr/bin/devilspie
 EOF
 "
 
-
-
+#reboot system
+reboot
 
 

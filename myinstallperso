@@ -127,7 +127,7 @@ rpm -ivh dlf005912/hl3045cnlpr-1.1.2-1.i386.rpm
 
 #test
 
-su gaaara
+su - gaaara --command="
 
 mkdir ~/.devilspie
 touch ~/.devilspie/flash-fullscreen-firefox.ds
@@ -152,8 +152,7 @@ Name=/usr/bin/devilspie
 Comment[fr_CA]=/usr/bin/devilspie
 Comment=/usr/bin/devilspie
 EOF
-
-
+"
 
 
 

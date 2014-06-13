@@ -136,11 +136,11 @@ rpm -ivh nerolinux-4.0.0.0b-x86_64.rpm
 
 #imprimante
 sleep 3
-wget http://download.brother.com/welcome/dlf005914/hl3045cncupswrapper-1.1.2-2.i386.rpm
-rpm -ivh hl3045cncupswrapper-1.1.2-2.i386.rpm
-sleep 3
 wget http://download.brother.com/welcome/dlf005912/hl3045cnlpr-1.1.2-1.i386.rpm
 rpm -ivh hl3045cnlpr-1.1.2-1.i386.rpm
+sleep 3
+wget http://download.brother.com/welcome/dlf005914/hl3045cncupswrapper-1.1.2-2.i386.rpm
+rpm -ivh hl3045cncupswrapper-1.1.2-2.i386.rpm
 
 #reboot system
 #reboot

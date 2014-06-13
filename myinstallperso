@@ -108,8 +108,8 @@ make install
 
 #java
 
-#mkdir /tmp/java
-#cd /tmp/java
+mkdir /tmp/java
+cd /tmp/java
 
 wget http://javadl.sun.com/webapps/download/AutoDL?BundleId=90215
 updatedb

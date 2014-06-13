@@ -111,10 +111,10 @@ make install
 #mkdir /tmp/java
 #cd /tmp/java
 
-#http://javadl.sun.com/webapps/download/AutoDL?BundleId=90215
-#updatedb
-#cd /home/gaaara/.mozilla/plugins
-#ln -s  /usr/java/jre1.7.0_60/lib/amd64/libnpjp2.so
+wget http://javadl.sun.com/webapps/download/AutoDL?BundleId=90215
+updatedb
+cd /home/gaaara/.mozilla/plugins
+ln -s  /usr/java/jre1.7.0_60/lib/amd64/libnpjp2.so
 cd /opt/google/chrome/
 mkdir plugins
 cd plugins

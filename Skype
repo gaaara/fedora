@@ -24,7 +24,7 @@ wget --trust-server-names http://www.skype.com/go/getskype-linux-dynamic
 mkdir /opt/skype
 
 #extraction de skype
-tar xvf skype-4.2* -C /opt/skype --strip-components=1
+tar xvf skype-4.3* -C /opt/skype --strip-components=1
 
 #liens des lanceur
 ln -s /opt/skype/skype.desktop /usr/share/applications/skype.desktop

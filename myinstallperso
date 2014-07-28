@@ -131,7 +131,7 @@ chmod +x nerolinux-4.0.0.0b-x86_64.rpm
 rpm -ivh nerolinux-4.0.0.0b-x86_64.rpm
 
 #Vmware 10.0.2
-plowdown 
+plowdown http://3v29p5xnat.1fichier.com
 chmod +x VMware-Workstation-Full-10.0.2-1744117.x86_64.bundle
 
 #Blackmagic Design: Intensity pro

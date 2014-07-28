@@ -136,7 +136,8 @@ chmod +x VMware-Workstation-Full-10.0.2-1744117.x86_64.bundle
 
 #Blackmagic Design: Intensity pro
 
-
+plowdown http://hlj822jics.1fichier.com
+tar xvf blackmagicdesign_RPM_x86_64.tar.gz
 yum install --nogpgcheck desktopvideo-10.1.1*.rpm \ desktopvideo-gui-*.rpm mediaexpress-*.rpm
 
 #imprimante

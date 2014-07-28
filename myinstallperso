@@ -126,13 +126,22 @@ mkdir /home/gaaara/setup
 cd /home/gaaara/setup
 
 #download nero linux 4
-plowdown http://nfxz54if7z.1fichier.com
+plowdown http://www.mediafire.com/download/anpw211dr4itgy2/nerolinux-4.0.0.0b-x86_64.rpm
+#plowdown http://nfxz54if7z.1fichier.com
 chmod +x nerolinux-4.0.0.0b-x86_64.rpm
 rpm -ivh nerolinux-4.0.0.0b-x86_64.rpm
 
 #Vmware 10.0.2
-#plowdown http://3jupne91j3.1fichier.com
-#chmod +x VMware-Workstation-Full-10.0.2-1744117.x86_64.bundle
+plowdown http://www.mediafire.com/download/lf00v7mrbtuq63n/VMware-Workstation-Full-10.0.3-1895310.x86_64.bundle
+chmod +x VMware-Workstation-Full-10.0.2-1744117.x86_64.bundle
+
+#Blackmagic Design: Intensity pro
+plowdown http://www.mediafire.com/download/80pck2t3r4dzdmb/desktopvideo-10.1.1-a26.x86_64.rpm
+plowdown http://www.mediafire.com/download/mu9hx9795glzvfs/desktopvideo-qt-10.1.1-a26.x86_64.rpm
+plowdown http://www.mediafire.com/download/ut66uhdu4334h0z/desktopvideo-gui-10.1.1-a26.x86_64.rpm
+plowdown http://www.mediafire.com/download/c4jlerll62h8wsw/mediaexpress-3.3.1-a4.x86_64.rpm
+
+sudo yum install --nogpgcheck desktopvideo-10.1.1*.rpm \ desktopvideo-gui-*.rpm mediaexpress-*.rpm
 
 #imprimante
 sleep 3

@@ -6,9 +6,9 @@
     rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
      
     yum install devilspie flash-plugin
-     
-    su -c " mkdir ~/.devilspie" gaaara
     su -c "touch ~/.devilspie/flash-fullscreen-firefox.ds" gaaara
+    su -c " mkdir ~/.devilspie" gaaara
+    
      
     su -c "cat <<'EOF' > ~/.devilspie
     (if

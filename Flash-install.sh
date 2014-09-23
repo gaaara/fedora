@@ -20,7 +20,7 @@
     EOF
     " gaaara
      
-    cat <<'EOF' > /etc/rc.local/devilspie0032.sh
+    cat <<'EOF' > /???/devilspie0032.sh
     #!/bin/sh
     /usr/bin/devilspie
     EOF

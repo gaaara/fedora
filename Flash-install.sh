@@ -25,5 +25,5 @@
     /usr/bin/devilspie
     EOF
      
-    chmod r+x /etc/rc.local/devilspie0032.sh
+    chmod a+x /???/devilspie0032.sh
 

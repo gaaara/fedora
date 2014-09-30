@@ -49,7 +49,7 @@ EOF
 touch /usr/bin/skype2
 chmod 755 /usr/bin/skype2
 
-#Configuration de lanceur 1
+#Configuration de lanceur 2
 cat <<'EOF' >  /usr/bin/skype2
 #!/bin/sh
 skype --dbpath=~/.Skype2 &

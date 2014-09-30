@@ -31,13 +31,26 @@ ln -s /opt/skype/skype.desktop /usr/share/applications/skype.desktop
 ln -s /opt/skype/icons/SkypeBlue_48x48.png /usr/share/icons/skype.png
 ln -s /opt/skype/icons/SkypeBlue_48x48.png /usr/share/pixmaps/skype.png
 
+#user1
+
 touch /usr/bin/skype
 chmod 755 /usr/bin/skype
 
-#
+#Configuration de lanceur 1
 cat <<'EOF' >  /usr/bin/skype
 #!/bin/sh
 export SKYPE_HOME="/opt/skype"
  
 $SKYPE_HOME/skype --resources=$SKYPE_HOME $*
+EOF
+
+
+#user2
+touch /usr/bin/skype2
+chmod 755 /usr/bin/skype2
+
+#Configuration de lanceur 1
+cat <<'EOF' >  /usr/bin/skype2
+#!/bin/sh
+skype --dbpath=~/.Skype2 &
 EOF

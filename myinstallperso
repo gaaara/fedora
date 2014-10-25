@@ -25,7 +25,8 @@ yum -y update
 
 sleep 1
 
-yum -y install wine plowshare libglade2-devel flash-plugin mkvtoolnix-gui devilspie nspluginwrapper alsa-plugins-pulseaudio libcurl vlc xbmc google-chrome-stable nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms wget
+yum -y install wine plowshare libglade2-devel flash-plugin mkvtoolnix-gui devilspie nspluginwrapper alsa-plugins-pulseaudio libcurl vlc xbmc google-chrome-stable nano unzip php p7zip filezilla php-mcrypt gcc binutils make kernel-devel kernel-headers dkms wget mumble geany xchat
+yum -y install geany-plugins-* 
 
 #skype
 #Dependence skype

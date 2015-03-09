@@ -62,25 +62,10 @@ $SKYPE_HOME/skype --resources=$SKYPE_HOME $*
 EOF
 
 #java
-
-## JDK 32-bit ##
-rpm -Uvh 
- 
-## JDK 64-bit ##
-rpm -Uvh 
-
-## java ##
-alternatives --install /usr/bin/java java /usr/java/latest/jre/bin/java 200000
-
-## Java Browser (Mozilla) Plugin 32-bit ##
-alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /usr/java/latest/jre/lib/i386/libnpjp2.so 200000
- 
-## Java Browser (Mozilla) Plugin 64-bit ##
-alternatives --install /usr/lib64/mozilla/plugins/libjavaplugin.so libjavaplugin.so.x86_64 /usr/java/latest/jre/lib/amd64/libnpjp2.so 200000
- 
-
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u25-b17/jdk-8u25-linux-x64.rpm"
+rpm -ivh jdk-8u25-linux-x64.rpm
 #download nero linux 4
-#a re voir
+ 
 #Vmware 10.0.2
 #a re voir
 

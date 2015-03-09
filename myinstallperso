@@ -63,7 +63,21 @@ EOF
 
 #java
 
-#a re voir
+## JDK 32-bit ##
+rpm -Uvh 
+ 
+## JDK 64-bit ##
+rpm -Uvh 
+
+## java ##
+alternatives --install /usr/bin/java java /usr/java/latest/jre/bin/java 200000
+
+## Java Browser (Mozilla) Plugin 32-bit ##
+alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /usr/java/latest/jre/lib/i386/libnpjp2.so 200000
+ 
+## Java Browser (Mozilla) Plugin 64-bit ##
+alternatives --install /usr/lib64/mozilla/plugins/libjavaplugin.so libjavaplugin.so.x86_64 /usr/java/latest/jre/lib/amd64/libnpjp2.so 200000
+ 
 
 #download nero linux 4
 #a re voir

@@ -62,8 +62,14 @@ $SKYPE_HOME/skype --resources=$SKYPE_HOME $*
 EOF
 
 #java
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u25-b17/jdk-8u25-linux-x64.rpm"
-rpm -ivh jdk-8u25-linux-x64.rpm
+## JDK 32-bit ##
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40-linux-i586.rpm"
+## JDK 64-bit ##
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40-linux-x64.rpm"
+## JDK 32-bit ##
+rpm -Uvh /path/to/binary/jdk-8u40-linux-i586.rpm
+## JDK 64-bit ##
+rpm -Uvh /path/to/binary/jdk-8u40-linux-x64.rpm
 #download nero linux 4
  
 #Vmware 10.0.2

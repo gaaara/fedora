@@ -70,6 +70,20 @@ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2F
 rpm -Uvh /path/to/binary/jdk-8u40-linux-i586.rpm
 ## JDK 64-bit ##
 rpm -Uvh /path/to/binary/jdk-8u40-linux-x64.rpm
+## java ##
+alternatives --install /usr/bin/java java /usr/java/latest/jre/bin/java 200000
+## javaws ##
+alternatives --install /usr/bin/javaws javaws /usr/java/latest/jre/bin/javaws 200000
+## Java Browser (Mozilla) Plugin 32-bit ##
+alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /usr/java/latest/jre/lib/i386/libnpjp2.so 200000
+## Java Browser (Mozilla) Plugin 64-bit ##
+alternatives --install /usr/lib64/mozilla/plugins/libjavaplugin.so libjavaplugin.so.x86_64 /usr/java/latest/jre/lib/amd64/libnpjp2.so 200000
+## javac ##
+alternatives --install /usr/bin/javac javac /usr/java/latest/bin/javac 200000
+## jar ##
+alternatives --install /usr/bin/jar jar /usr/java/latest/bin/jar 200000
+export JAVA_HOME=&amp;quot;/usr/java/latest&amp;quot;
+export PATH=$PATH:/usr/java/latest/bin:/usr/java/latest/jre/bin
 #download nero linux 4
  
 #Vmware 10.0.2
